@@ -1,0 +1,208 @@
+body {
+	margin: 0;
+}
+
+/*MENU*/
+#nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0,0,0,0.5);
+	padding: 30px;
+	z-index: 3;
+
+	position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 50px;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+li a:hover {
+	color: #C71B78;
+	font-weight: 600;
+}
+
+/*HOME*/
+#home {
+	height: 100vh;
+	background-image: url(../bilder/SGY_Schmuck1.jpeg);
+}
+
+#home div {
+	height: 25vh;
+}
+
+#logo {
+	display: block;
+   	margin-left: auto;
+   	margin-right: auto;	
+   	width: 50%;
+}
+
+
+/*GENERALS*/
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	margin-top: 15%;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+h3 {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	background-color: #C71B78;
+	color: white;
+ 	padding: 5px;
+ 	width: 50px;
+ 	text-align: center;
+}
+
+h4:hover {
+	background-color: black;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+span {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 0.8em;
+}
+
+/*TEXT*/
+.textblock-right {
+	width: 50%;
+	float: right;
+	padding-right: 50px;
+}
+
+.textblock-left {
+	width: 50%;
+	float: left;
+	padding-left: 50px;
+}
+
+/*UEBER SGY*/
+#uebersgy {
+	height: 100vh;
+}
+
+/*GRID*/
+#produkte {
+	padding-top: 10%;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 200px);
+	grid-template-rows: 200px 200px 200px 200px;
+	grid-gap: 5px;
+	align-content: start;
+	justify-content: center;
+}
+
+.grid-container img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.grid-item {
+	background-size: cover;
+	background-position: center center;
+}
+
+/*OVERLAY*/
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: block;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 2;
+  color: white;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+/*GRID-ITEMS*/
+.item1 {
+	background-image: url("../bilder/Schmuck1.jpeg");
+}
+.item2 {
+	background-image: url("../bilder/Schmuck2.jpeg");
+}
+.item3 {
+	background-image: url("../bilder/Schmuck3.jpeg");
+}
+.item4 {
+	background-image: url("../bilder/Schmuck4.jpeg");
+}
+.item5 {
+	background-image: url("../bilder/Schmuck5.jpeg");
+}
+.item6 {
+	background-image: url("../bilder/Schmuck6.jpeg");
+}
+.item7 {
+	background-image: url("../bilder/Schmuck7.jpeg");
+}
+.item8 {
+	background-image: url("../bilder/Schmuck8.jpeg");
+}
+.item9 {
+	background-image: url("../bilder/Schmuck9.jpeg");
+}
+.item10 {
+	background-image: url("../bilder/Schmuck10.jpeg");
+}
+
+/*KONTAKT*/
+
+#kontakt {
+	background-color: rgba(200,200,200,0.8);
+	height: 50vh;
+	display: block;
+}
+
+#map {
+	width: 100%;
+	height: 400px;
+	display: inline-block;
+}
