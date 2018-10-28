@@ -1,9 +1,11 @@
-body {
-	margin: 0;
+* {
+  margin:0;
+  box-sizing: border-box;
 }
+.content {	padding: 0px 80px 0px 80px;}
 
 /*MENU*/
-#nav ul {
+/* #nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -28,28 +30,21 @@ li a {
 
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
-}
+} */
 
-li a:hover {
-	color: #C71B78;
-	font-weight: 600;
-}
 
 /*HOME*/
 #home {
-	height: 100vh;
-	background-image: url(../bilder/SGY_Schmuck1.jpeg);
-}
-
-#home div {
-	height: 25vh;
+	height: 50vh;
+	background-image: url(../bilder/fotiwaerch-77.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 50px;
 }
 
 #logo {
 	display: block;
-   	margin-left: auto;
-   	margin-right: auto;	
-   	width: 50%;
+  width: 30%;
 }
 
 
@@ -57,7 +52,6 @@ li a:hover {
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	margin-top: 15%;
 }
 
 p {
@@ -76,8 +70,7 @@ h4 {
 	font-weight: 400;
 	background-color: #C71B78;
 	color: white;
- 	padding: 5px;
- 	width: 50px;
+ 	width: 70px;
  	text-align: center;
 }
 
@@ -95,114 +88,66 @@ span {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-size: 0.8em;
+	/*momentan mal weglassen*/
+	display:none;
 }
 
-/*TEXT*/
-.textblock-right {
-	width: 50%;
-	float: right;
-	padding-right: 50px;
-}
-
-.textblock-left {
-	width: 50%;
-	float: left;
-	padding-left: 50px;
-}
-
-/*UEBER SGY*/
-#uebersgy {
-	height: 100vh;
-}
-
-/*GRID*/
-#produkte {
-	padding-top: 10%;
-}
-.grid-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, 200px);
-	grid-template-rows: 200px 200px 200px 200px;
-	grid-gap: 5px;
-	align-content: start;
-	justify-content: center;
-}
-
-.grid-container img {
-	height: 100%;
+/*UEBER*/
+.block-right, .block-left {
 	width: 100%;
-	object-fit: cover;
+	margin-bottom: 30px;
 }
 
-.grid-item {
+
+.block-left.image {
+	width: 100%;
+	height: 400px;
+	background-image: url(../bilder/fotiwaerch-82.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: center;
 }
 
-/*OVERLAY*/
-.overlay {
-  height: 100%;
-  width: 100%;
-  display: block;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(0,0,0,0.8);
-  z-index: 2;
-  color: white;
-}
-
-.overlay-text {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-}
-
-.grid-item:hover .overlay {
-  opacity: 1;
-}
-
-/*GRID-ITEMS*/
-.item1 {
-	background-image: url("../bilder/Schmuck1.jpeg");
-}
-.item2 {
-	background-image: url("../bilder/Schmuck2.jpeg");
-}
-.item3 {
-	background-image: url("../bilder/Schmuck3.jpeg");
-}
-.item4 {
-	background-image: url("../bilder/Schmuck4.jpeg");
-}
-.item5 {
-	background-image: url("../bilder/Schmuck5.jpeg");
-}
-.item6 {
-	background-image: url("../bilder/Schmuck6.jpeg");
-}
-.item7 {
-	background-image: url("../bilder/Schmuck7.jpeg");
-}
-.item8 {
-	background-image: url("../bilder/Schmuck8.jpeg");
-}
-.item9 {
-	background-image: url("../bilder/Schmuck9.jpeg");
-}
-.item10 {
-	background-image: url("../bilder/Schmuck10.jpeg");
+#uebersgy img {
+	width: 100%;
+  height: auto;
+	padding: 0px 20px 20px 0px;
 }
 
 /*KONTAKT*/
-
 #kontakt {
 	background-color: rgba(200,200,200,0.8);
 	height: 50vh;
 	display: block;
 }
 
-#map {
-	width: 100%;
-	height: 400px;
-	display: inline-block;
-}
+/*MEDIA QUERIES*/
+
+/*kleine geräte*/
+@media only screen and (max-width: 980px) {
+	body {
+  }
+
+/*phone*/
+	@media only screen and (max-width: 375px) {
+		body {
+	  }
+
+/*grosse geräte, beschrieb ist 2-spaltig*/
+	@media only screen and (min-width: 1023px) {
+		#uebersgy {
+			height: 100vh;
+			display: flex;
+			flex-flow: row wrap;
+		  justify-content: flex-start;
+		}
+	}
+
+	.block-right.image {
+		width: 100%;
+		height: 400px;
+		background-image: url(../bilder/fotiwaerch-77.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}

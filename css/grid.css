@@ -1,0 +1,76 @@
+#produkte {
+	padding-top: 10%;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 200px);
+	grid-template-rows: 200px 200px 200px 200px;
+	grid-gap: 5px;
+	align-content: start;
+	justify-content: center;
+}
+
+.grid-container img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.grid-item {
+	background-size: cover;
+	background-position: center center;
+}
+
+/*OVERLAY*/
+/*.overlay {
+  height: 100%;
+  width: 100%;
+  display: block;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 2;
+  color: white;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}*/
+
+/*GRID-ITEMS*/
+.item1 {
+	background-image: url("../bilder/Schmuck1.jpeg");
+}
+.item2 {
+	background-image: url("../bilder/Schmuck2.jpeg");
+}
+.item3 {
+	background-image: url("../bilder/Schmuck3.jpeg");
+}
+.item4 {
+	background-image: url("../bilder/Schmuck4.jpeg");
+}
+.item5 {
+	background-image: url("../bilder/Schmuck5.jpeg");
+}
+.item6 {
+	background-image: url("../bilder/Schmuck6.jpeg");
+}
+.item7 {
+	background-image: url("../bilder/Schmuck7.jpeg");
+}
+.item8 {
+	background-image: url("../bilder/Schmuck8.jpeg");
+}
+.item9 {
+	background-image: url("../bilder/Schmuck9.jpeg");
+}
+.item10 {
+	background-image: url("../bilder/Schmuck10.jpeg");
+}
