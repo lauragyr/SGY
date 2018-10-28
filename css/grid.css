@@ -1,13 +1,15 @@
 #produkte {
 	padding-top: 10%;
+  height: auto;
 }
 .grid-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 200px);
-	grid-template-rows: 200px 200px 200px 200px;
+	grid-template-columns: repeat(auto-fill, 180px);
+	grid-template-rows: 180px 180px 180px 180px;
 	grid-gap: 5px;
 	align-content: start;
 	justify-content: center;
+  margin-bottom: 50px;
 }
 
 .grid-container img {
@@ -73,4 +75,29 @@
 }
 .item10 {
 	background-image: url("../bilder/Schmuck10.jpeg");
+}
+
+
+/*MEDIA QUERIES*/
+
+/*kleine geräte*/
+@media only screen and (min-width: 980px) {
+  .grid-container {
+  	grid-template-columns: repeat(auto-fill, 200px);
+  	grid-template-rows: 200px 200px 200px 200px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: 300px 300px 300px 300px;
+  }
+}
+
+
+@media only screen and (min-width: 1550px) {
+  #uebersgy {
+    max-width: 1550px;
+  }
 }

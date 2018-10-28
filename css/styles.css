@@ -2,7 +2,8 @@
   margin:0;
   box-sizing: border-box;
 }
-.content {	padding: 0px 80px 0px 80px;}
+.content {	padding: 0px 15px 0px 15px;}
+
 
 /*MENU*/
 /* #nav ul {
@@ -52,6 +53,7 @@ li a {
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
+	margin-bottom: 10px;
 }
 
 p {
@@ -65,24 +67,15 @@ h3 {
 	font-weight: 600;
 }
 
-h4 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	background-color: #C71B78;
-	color: white;
- 	width: 70px;
- 	text-align: center;
-}
-
-h4:hover {
-	background-color: black;
-	color: white;
-}
-
 a {
 	text-decoration: none;
-	color: white;
+	color: #C71B78;
 }
+
+a:hover {
+	font-weight: 400;
+}
+
 
 span {
 	font-family: 'Montserrat', sans-serif;
@@ -93,61 +86,56 @@ span {
 }
 
 /*UEBER*/
-.block-right, .block-left {
-	width: 100%;
-	margin-bottom: 30px;
-}
+.block { margin-bottom: 50px;}
 
 
-.block-left.image {
+.block.image1, .block.image2 {
 	width: 100%;
-	height: 400px;
-	background-image: url(../bilder/fotiwaerch-82.jpg);
-	background-repeat: no-repeat;
+	height: 500px;
 	background-size: cover;
 	background-position: center;
 }
+.image1 { background-image: url(../bilder/fotiwaerch-82.jpg);}
+.image2 {	background-image: url(../bilder/fotiwaerch-95.jpg);}
 
-#uebersgy img {
-	width: 100%;
-  height: auto;
-	padding: 0px 20px 20px 0px;
-}
+
 
 /*KONTAKT*/
 #kontakt {
-	background-color: rgba(200,200,200,0.8);
-	height: 50vh;
-	display: block;
+ border-top: solid 1px #C71B78;
+	padding: 40px 20px 40px 30px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
+
+
 
 /*MEDIA QUERIES*/
 
 /*kleine geräte*/
-@media only screen and (max-width: 980px) {
-	body {
-  }
+@media only screen and (min-width: 980px) {
+	.content {	padding: 0px 30px 0px 30px;}
+	.block.image1, .block.image2 { height: 400px;}
+}
 
 /*phone*/
-	@media only screen and (max-width: 375px) {
-		body {
-	  }
+	@media only screen and (min-width: 375px) {
+	}
+
 
 /*grosse geräte, beschrieb ist 2-spaltig*/
 	@media only screen and (min-width: 1023px) {
-		#uebersgy {
-			height: 100vh;
-			display: flex;
-			flex-flow: row wrap;
-		  justify-content: flex-start;
+		#uebersgy > .block {
+			width: 48%;
 		}
-	}
 
-	.block-right.image {
-		width: 100%;
-		height: 400px;
-		background-image: url(../bilder/fotiwaerch-77.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-	}
+#uebersgy {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+		#specialimg { order: 1;	}
+		.content { padding: 0px 80px 0px 80px; }
+}
