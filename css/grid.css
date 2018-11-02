@@ -1,6 +1,5 @@
 #produkte {
 	padding-top: 10%;
-  height: auto;
 }
 .grid-container {
 	display: grid;
@@ -47,35 +46,158 @@
 
 /*GRID-ITEMS*/
 .item1 {
-	background-image: url("../bilder/Schmuck1.jpeg");
+	background-image: url("../bilder/PB020004.JPG");
 }
 .item2 {
-	background-image: url("../bilder/Schmuck2.jpeg");
+	background-image: url("../bilder/PB020005.JPG");
 }
 .item3 {
-	background-image: url("../bilder/Schmuck3.jpeg");
+	background-image: url("../bilder/PB020016.JPG");
 }
 .item4 {
-	background-image: url("../bilder/Schmuck4.jpeg");
+	background-image: url("../bilder/PB020019.JPG");
 }
 .item5 {
-	background-image: url("../bilder/Schmuck5.jpeg");
+	background-image: url("../bilder/PB020021.JPG");
 }
 .item6 {
-	background-image: url("../bilder/Schmuck6.jpeg");
+	background-image: url("../bilder/PB020026.JPG");
 }
 .item7 {
-	background-image: url("../bilder/Schmuck7.jpeg");
+	background-image: url("../bilder/PB020028.JPG");
 }
 .item8 {
-	background-image: url("../bilder/Schmuck8.jpeg");
+	background-image: url("../bilder/PB020031.JPG");
 }
 .item9 {
-	background-image: url("../bilder/Schmuck9.jpeg");
+	background-image: url("../bilder/PB020034.JPG");
 }
 .item10 {
-	background-image: url("../bilder/Schmuck10.jpeg");
+	background-image: url("../bilder/PB020037.JPG");
 }
+.item11 {
+	background-image: url("../bilder/PB020038.JPG");
+}
+.item12 {
+	background-image: url("../bilder/PB020040.JPG");
+}
+.item13 {
+	background-image: url("../bilder/PB020043.JPG");
+}
+.item14 {
+	background-image: url("../bilder/PB020047.JPG");
+}
+.item15 {
+	background-image: url("../bilder/PB020049.JPG");
+}
+.item16 {
+	background-image: url("../bilder/PB020050.JPG");
+}
+.item17 {
+	background-image: url("../bilder/PB020055.JPG");
+}
+.item18 {
+	background-image: url("../bilder/PB020058.JPG");
+}
+.item19 {
+	background-image: url("../bilder/PB020061.JPG");
+}
+.item20 {
+	background-image: url("../bilder/PB020065.JPG");
+}
+.item21 {
+	background-image: url("../bilder/PB020066.JPG");
+}
+.item22 {
+	background-image: url("../bilder/PB020069.JPG");
+}
+.item23 {
+	background-image: url("../bilder/PB020071.JPG");
+}
+.item24 {
+	background-image: url("../bilder/PB020072.JPG");
+}
+.item25 {
+	background-image: url("../bilder/PB020083.JPG");
+}
+.item26 {
+	background-image: url("../bilder/PB020089.JPG");
+}
+.item27 {
+	background-image: url("../bilder/PB020090.JPG");
+}
+.item28 {
+	background-image: url("../bilder/PB020092.JPG");
+}
+.item29 {
+	background-image: url("../bilder/PB020095.JPG");
+}
+.item30 {
+	background-image: url("../bilder/PB020099.JPG");
+}
+.item31 {
+	background-image: url("../bilder/PB020107.JPG");
+}
+.item32 {
+	background-image: url("../bilder/PB020109.JPG");
+}
+.item33 {
+	background-image: url("../bilder/PB020113.JPG");
+}
+.item34 {
+	background-image: url("../bilder/PB020117.JPG");
+}
+.item35 {
+	background-image: url("../bilder/PB020122.JPG");
+}
+.item36 {
+	background-image: url("../bilder/PB020123.JPG");
+}
+.item37 {
+	background-image: url("../bilder/PB020127.JPG");
+}
+.item38 {
+	background-image: url("../bilder/PB020130.JPG");
+}
+.item39 {
+	background-image: url("../bilder/PB020133.JPG");
+}
+.item40 {
+	background-image: url("../bilder/PB020138.JPG");
+}
+.item41 {
+	background-image: url("../bilder/PB020139.JPG");
+}
+.item42 {
+	background-image: url("../bilder/PB020144.JPG");
+}
+.item43 {
+	background-image: url("../bilder/PB020145.JPG");
+}
+.item44 {
+	background-image: url("../bilder/PB020151.JPG");
+}
+.item45 {
+	background-image: url("../bilder/PB020156.JPG");
+}
+.item46 {
+	background-image: url("../bilder/PB020160.JPG");
+}
+.item47 {
+	background-image: url("../bilder/PB020162.JPG");
+}
+.item48 {
+	background-image: url("../bilder/PB020166.JPG");
+}
+.item49 {
+	background-image: url("../bilder/PB020173.JPG");
+}
+.item50 {
+	background-image: url("../bilder/PB020177.JPG");
+}
+
+
+
 
 
 /*MEDIA QUERIES*/
