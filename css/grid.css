@@ -1,225 +1,38 @@
 #produkte {
-	padding-top: 10%;
-}
-.grid-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, 180px);
-	grid-template-rows: 180px 180px 180px 180px;
-	grid-gap: 5px;
-	align-content: start;
-	justify-content: center;
-  margin-bottom: 50px;
+	padding: 30px 0px 50px 0px;
 }
 
-.grid-container img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.grid-item {
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+	padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
 	background-size: cover;
 	background-position: center center;
 }
 
-/*OVERLAY*/
-/*.overlay {
-  height: 100%;
-  width: 100%;
-  display: block;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(0,0,0,0.8);
-  z-index: 2;
-  color: white;
-}
-
-.overlay-text {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-}
-
-.grid-item:hover .overlay {
-  opacity: 1;
-}*/
-
-/*GRID-ITEMS*/
-.item1 {
-	background-image: url("../bilder/PB020004.JPG");
-}
-.item2 {
-	background-image: url("../bilder/PB020005.JPG");
-}
-.item3 {
-	background-image: url("../bilder/PB020016.JPG");
-}
-.item4 {
-	background-image: url("../bilder/PB020019.JPG");
-}
-.item5 {
-	background-image: url("../bilder/PB020021.JPG");
-}
-.item6 {
-	background-image: url("../bilder/PB020026.JPG");
-}
-.item7 {
-	background-image: url("../bilder/PB020028.JPG");
-}
-.item8 {
-	background-image: url("../bilder/PB020031.JPG");
-}
-.item9 {
-	background-image: url("../bilder/PB020034.JPG");
-}
-.item10 {
-	background-image: url("../bilder/PB020037.JPG");
-}
-.item11 {
-	background-image: url("../bilder/PB020038.JPG");
-}
-.item12 {
-	background-image: url("../bilder/PB020040.JPG");
-}
-.item13 {
-	background-image: url("../bilder/PB020043.JPG");
-}
-.item14 {
-	background-image: url("../bilder/PB020047.JPG");
-}
-.item15 {
-	background-image: url("../bilder/PB020049.JPG");
-}
-.item16 {
-	background-image: url("../bilder/PB020050.JPG");
-}
-.item17 {
-	background-image: url("../bilder/PB020055.JPG");
-}
-.item18 {
-	background-image: url("../bilder/PB020058.JPG");
-}
-.item19 {
-	background-image: url("../bilder/PB020061.JPG");
-}
-.item20 {
-	background-image: url("../bilder/PB020065.JPG");
-}
-.item21 {
-	background-image: url("../bilder/PB020066.JPG");
-}
-.item22 {
-	background-image: url("../bilder/PB020069.JPG");
-}
-.item23 {
-	background-image: url("../bilder/PB020071.JPG");
-}
-.item24 {
-	background-image: url("../bilder/PB020072.JPG");
-}
-.item25 {
-	background-image: url("../bilder/PB020083.JPG");
-}
-.item26 {
-	background-image: url("../bilder/PB020089.JPG");
-}
-.item27 {
-	background-image: url("../bilder/PB020090.JPG");
-}
-.item28 {
-	background-image: url("../bilder/PB020092.JPG");
-}
-.item29 {
-	background-image: url("../bilder/PB020095.JPG");
-}
-.item30 {
-	background-image: url("../bilder/PB020099.JPG");
-}
-.item31 {
-	background-image: url("../bilder/PB020107.JPG");
-}
-.item32 {
-	background-image: url("../bilder/PB020109.JPG");
-}
-.item33 {
-	background-image: url("../bilder/PB020113.JPG");
-}
-.item34 {
-	background-image: url("../bilder/PB020117.JPG");
-}
-.item35 {
-	background-image: url("../bilder/PB020122.JPG");
-}
-.item36 {
-	background-image: url("../bilder/PB020123.JPG");
-}
-.item37 {
-	background-image: url("../bilder/PB020127.JPG");
-}
-.item38 {
-	background-image: url("../bilder/PB020130.JPG");
-}
-.item39 {
-	background-image: url("../bilder/PB020133.JPG");
-}
-.item40 {
-	background-image: url("../bilder/PB020138.JPG");
-}
-.item41 {
-	background-image: url("../bilder/PB020139.JPG");
-}
-.item42 {
-	background-image: url("../bilder/PB020144.JPG");
-}
-.item43 {
-	background-image: url("../bilder/PB020145.JPG");
-}
-.item44 {
-	background-image: url("../bilder/PB020151.JPG");
-}
-.item45 {
-	background-image: url("../bilder/PB020156.JPG");
-}
-.item46 {
-	background-image: url("../bilder/PB020160.JPG");
-}
-.item47 {
-	background-image: url("../bilder/PB020162.JPG");
-}
-.item48 {
-	background-image: url("../bilder/PB020166.JPG");
-}
-.item49 {
-	background-image: url("../bilder/PB020173.JPG");
-}
-.item50 {
-	background-image: url("../bilder/PB020177.JPG");
-}
-
-
-
-
-
-/*MEDIA QUERIES*/
-
-/*kleine geräte*/
-@media only screen and (min-width: 980px) {
-  .grid-container {
-  	grid-template-columns: repeat(auto-fill, 200px);
-  	grid-template-rows: 200px 200px 200px 200px;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
   }
 }
 
-@media only screen and (min-width: 1440px) {
-  .grid-container {
-    grid-template-columns: repeat(auto-fill, 300px);
-    grid-template-rows: 300px 300px 300px 300px;
-  }
-}
-
-
-@media only screen and (min-width: 1550px) {
-  #uebersgy {
-    max-width: 1550px;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
 }
